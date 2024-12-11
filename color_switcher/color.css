@@ -1,0 +1,30 @@
+
+button {
+    height: 60px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid;
+    margin: 10px;
+    transition: all 0.14s;
+}
+
+.red-btn {
+    background-color: red;
+}
+
+.blu-btn {
+    background-color: blue;
+}
+
+.grn-btn {
+    background-color: green;
+}
+
+.yellow-btn {
+    background-color:yellow;
+}
+
+button:active {
+    opacity: 0.5;
+}
