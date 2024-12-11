@@ -1,0 +1,131 @@
+/* General Reset for Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading Styles */
+h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #121212;
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+/* Input and Button Container */
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Add Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all  0.3s ease; 
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+/* To-Do List Items Container */
+#items {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+/* Individual Item Styling */
+#items div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#items div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content Style */
+#items p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+}
+
+/* Delete Button Styling */
+#items button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#items button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #items {
+        max-width: 100%;
+    }
+}
