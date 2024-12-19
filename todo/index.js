@@ -31,7 +31,7 @@ function displayImage(){
         itemEle.textContent = todoItems[i];
         itemBoxEle.append(itemEle);
         const deleteEle = document.createElement('button');
-        deleteEle.innerHTML="Delete the item";
+        deleteEle.innerHTML=`<i class="fa fa-trash" aria-hidden="true"></i>`;
         itemBoxEle.append(deleteEle);
         deleteEle.onclick = () => deleteItem(i);
         

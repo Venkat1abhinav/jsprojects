@@ -32,7 +32,7 @@ h2 {
 
 /* Input and Button Container */
 input[type="text"] {
-    width: 300px;
+    width: 400px;
     padding: 10px;
     font-size: 1rem;
     border: 2px solid #ddd;
@@ -50,6 +50,7 @@ input[type="text"]:focus {
 /* Add Button Styles */
 button {
     padding: 10px 20px;
+    width: 200px;
     font-size: 1rem;
     color: #fff;
     background-color: #007bff;
@@ -107,6 +108,7 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 50px;
     transition: background-color 0.3s ease;
 }
 
